@@ -12,6 +12,7 @@ public class Hook : MonoBehaviour {
     private LineRenderer line;
     private bool oneTime2 = true;
     private float distance;
+    private Vector3 aimPosition;
 
     float startWidth = 0.03f;
     float endWidth = 0.006f;
@@ -39,6 +40,9 @@ public class Hook : MonoBehaviour {
 
     void FixedUpdate()
     {
+        if (Rplay.velocity.magnitude > 22)
+            Rplay.velocity = Rplay.velocity.normalized * 22;
+
         //DESTROY
         float destroyDistance = Vector3.Distance(this.transform.position, player.transform.position);
         if (destroyDistance > 80)
@@ -102,8 +106,11 @@ public class Hook : MonoBehaviour {
 
 	 	    if (curDistance > distance)
 	 	    {
-			    Debug.Log(distance);
                 player.transform.position = distance * (player.transform.position - this.transform.position).normalized + transform.position;
+                //aimPosition = distance * (player.transform.position - this.transform.position).normalized + transform.position;
+
+                //Vector3 moveDir = (this.transform.position - player.transform.position).normalized;
+                //Rplay.velocity = (Rplay.velocity * -Rplay.velocity.magnitude/10);
 	   	    }
 	    }
         else
