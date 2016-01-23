@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Hook : MonoBehaviour {
 
+    //public GameObject smoke;
     private GameObject player;
     private GameObject player2;
     private Rigidbody Rplay;
@@ -102,7 +103,7 @@ public class Hook : MonoBehaviour {
                 catch { }
             }
             
-            curDistance = Vector3.Distance(this.transform.position, player.transform.position);
+            /*curDistance = Vector3.Distance(this.transform.position, player.transform.position);
 
 	 	    if (curDistance > distance)
 	 	    {
@@ -111,7 +112,7 @@ public class Hook : MonoBehaviour {
 
                 //Vector3 moveDir = (this.transform.position - player.transform.position).normalized;
                 //Rplay.velocity = (Rplay.velocity * -Rplay.velocity.magnitude/10);
-	   	    }
+	   	    }*/
 	    }
         else
             oneTime2 = true;
