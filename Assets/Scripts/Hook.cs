@@ -14,6 +14,10 @@ public class Hook : MonoBehaviour {
     private bool oneTime2 = true;
     private float distance;
     private Vector3 aimPosition;
+    private GameObject cloneL;
+    private GameObject cloneR;
+    private GameObject mainCamera;
+
 
     float startWidth = 0.03f;
     float endWidth = 0.006f;
@@ -24,8 +28,11 @@ public class Hook : MonoBehaviour {
 
     void Start()
     {
+        cloneL = GameObject.Find("cloneLeft");
+        cloneR = GameObject.Find("cloneRight");
         player = GameObject.Find("RigidBodyFPSController");
         Rplay = GameObject.Find("RigidBodyFPSController").GetComponent<Rigidbody>();
+        mainCamera = GameObject.Find("MainCamera");
         line = GetComponentInChildren<LineRenderer>();
     }
 
@@ -72,16 +79,12 @@ public class Hook : MonoBehaviour {
                 {
                     if (oneTime2)
                     {
-                        GameObject.Find("MainCamera").GetComponent<Animation>().Play();
+                        mainCamera.GetComponent<Animation>().Play();
                         oneTime2 = false;
                     }
 
-  
-                    //GameObject.Find("MainCamera").GetComponent<Animation>().Play();
-                    if (Input.GetButton("Fire1") && Input.GetButton("Fire2") && GameObject.Find("cloneRight").GetComponent<Rigidbody>().isKinematic && GameObject.Find("cloneLeft").GetComponent<Rigidbody>().isKinematic)
+                    if (Input.GetButton("Fire1") && Input.GetButton("Fire2") && cloneR.GetComponent<Rigidbody>().isKinematic && cloneL.GetComponent<Rigidbody>().isKinematic)
                     {
-                        GameObject cloneL = GameObject.Find("cloneLeft");
-                        GameObject cloneR = GameObject.Find("cloneRight");
                         Vector3 moveDir1 = (cloneR.transform.position - player.transform.position).normalized;
                         Vector3 moveDir2 = (cloneL.transform.position - player.transform.position).normalized;
                         Vector3 moveDirF = moveDir1 + moveDir2;
