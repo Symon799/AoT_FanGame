@@ -43,13 +43,15 @@ public class anim : MonoBehaviour {
         GetComponent<Animator>().SetInteger("state", 0);
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider collider)
     {
-        GetComponent<Animator>().SetBool("close", true);
+        if (collider.tag != "Vision")
+            GetComponent<Animator>().SetBool("close", true);
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider collider)
     {
-        GetComponent<Animator>().SetBool("close", false);
+        if (collider.tag != "Vision")
+            GetComponent<Animator>().SetBool("close", false);
     }
 }

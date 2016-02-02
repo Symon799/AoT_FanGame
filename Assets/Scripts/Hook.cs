@@ -12,7 +12,7 @@ public class Hook : MonoBehaviour {
     private float curDistance;
     private LineRenderer line;
     private bool oneTime2 = true;
-    private float distance;
+    //private float distance;
     private Vector3 aimPosition;
     private GameObject cloneL;
     private GameObject cloneR;
@@ -53,7 +53,7 @@ public class Hook : MonoBehaviour {
 
         //DESTROY
         float destroyDistance = Vector3.Distance(this.transform.position, player.transform.position);
-        if (destroyDistance > 80)
+        if (destroyDistance > 120)
             DestroyGrap();
 
         if (this.gameObject.name == "cloneLeft")
@@ -131,7 +131,7 @@ public class Hook : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
 	    GetComponent<Rigidbody>().isKinematic = true;
-        distance = Vector3.Distance(this.transform.position, player.transform.position);
+        //distance = Vector3.Distance(this.transform.position, player.transform.position);
  	    hooked = true;
     }
 }

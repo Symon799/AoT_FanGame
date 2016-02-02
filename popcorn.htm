@@ -1,0 +1,507 @@
+<html><head><title>popcorn-engine logfile</title>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<style>body
+{
+   padding-top: 44px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background: #bbbbbb;
+   margin: 0px;
+   color: #000000;
+   font-family: Consolas, Courier;
+   font-size: 10pt;
+}
+.header2
+{
+   font-size: 80px;
+   left: 5px;
+   color: #408ed9;
+   position: absolute;
+   top: -30px
+}
+.header
+{
+   left: 0px;
+   overflow: hidden;
+   width: 100%;
+   color: #ffffff;
+   font-family: Verdana, Arial;
+   position: absolute;
+   top: 0px;
+   height: 44px;
+   background-color: #1b79d3
+}
+.pagetitle
+{
+   font-size: 22px;
+   z-index: 100;
+   left: 5px;
+   color: #ffffff;
+   position: absolute;
+   top: 14px;
+}
+.copyright
+{
+   font-size: 10px;
+   z-index: 60;
+   left: -8px;
+   width: 100%;
+   color: #68a6e1;
+   position: absolute;
+   top: 1px;
+   text-align: right;
+   text-decoration: none;
+}
+.build
+{
+   font-size: 12px;
+   color: #eeeeee;
+   text-decoration: none;
+}
+a.header1:link
+{
+   font-size: 30px;
+   z-index: 50;
+   left: -8px;
+   width: 100%;
+   color: #5299dd;
+   position: absolute;
+   top: 6px;
+   text-align: right;
+   text-decoration: none;
+}
+a.header1:visited
+{
+   font-size: 30px;
+   z-index: 50;
+   left: -8px;
+   width: 100%;
+   color: #5299dd;
+   position: absolute;
+   top: 6px;
+   text-align: right;
+   text-decoration: none;
+}
+a.header1:hover
+{
+   font-size: 30px;
+   z-index: 50;
+   left: -8px;
+   width: 100%;
+   color: #68a6e1;
+   position: absolute;
+   top: 6px;
+   text-align: right;
+   text-decoration: none;
+}
+.log_caller { color: #666666; }
+.dll { color: #800070; }
+.M   { color: #000000; background-color: #DDDDDD; white-space: pre; }
+.W   { color: #000000; background-color: #FFAA33; white-space: pre; }
+.E   { color: #FFFFFF; background-color: #DD1100; white-space: pre; }
+.EC  { color: #FFFFFF; background-color: #DD0000; white-space: pre; }
+.EI  { color: #FFFFFF; background-color: #EE0000; white-space: pre; }
+.EF  { color: #FFFFFF; background-color: #FF0000; white-space: pre; }
+</style>
+</head>
+<body>
+<div class=header id=header>
+    <a class=header1 id=header1 href="http://www.popcornfx.com/">www.popcornfx.com</a>
+    <div class=copyright id=copyright>Copyright (c) Persistant Studios 2010-2015</div>
+    <div class=header2 id=header2>PopcornFX</div>
+    <div class=pagetitle id=pagetitle>PopcornFX Unity plugin logfile. <font class=build>build 1.8.2.25329, Wed Jun 3 14:58:14 2015 +0200</font></i></div>
+</div><div class=M><center>... STARTUP ...</center></div>
+<div class=M>[BOOT]> License keycode: "DiscoveryPlugin-{169612C6056451B3}"</div>
+<div class=M>[BOOT]> Popcorn runtime build config: .... RELEASE</div>
+<div class=M>[BOOT]> Has debug asserts: .................... NO</div>
+<div class=M>[BOOT]> Has release asserts: ................. YES</div>
+<div class=M>[BOOT]> Has anonymous asserts: ................ NO</div>
+<div class=M>[BOOT]> Has containers monitoring: ............ NO</div>
+<div class=M>[BOOT]> Has iterators debug checks: ........... NO</div>
+<div class=M>[BOOT]> Mem debug level: ....................... 0</div>
+<div class=M>[BOOT]> Has default mem allocators: .......... YES</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH_KERNEL ...</div>
+<div class=M>[BOOT]> [KR_CALLSTACK             ]:Startup       333 usec         0 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_PERFMONITOR           ]:Startup         2 usec        80 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_MEM                   ]:Startup         0 usec        72 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_CONTAINERS            ]:Startup         0 usec         0 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_ASSERT                ]:Startup         0 usec         0 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_BUFFER                ]:Startup         1 usec         0 bytes      0 KbTotal</div>
+<div class=M>[BOOT]> [KR_STRING                ]:Startup         1 usec      2048 bytes      3 KbTotal</div>
+<div class=M>[BOOT]> [KR_RTTI                  ]:Startup         0 usec         0 bytes      3 KbTotal</div>
+<div class=M>[KR_THREADS]> Windows-7 group affinity functions are available. Thread scheduling will scale to more than 64 processors.</div>
+<div class=M>[BOOT]> [KR_THREADS               ]:Startup        21 usec         0 bytes      3 KbTotal</div>
+<div class=M>[BOOT]> [KR_THREAD_POOL           ]:Startup         0 usec         0 bytes      3 KbTotal</div>
+<div class=M>[KR_CAPS_CPU]> Multi-Core system, Multi-threaded cores</div>
+<div class=M>[KR_CAPS_CPU]>      Logical processors reported by OS : 8</div>
+<div class=M>[KR_CAPS_CPU]>      Visible logical processors        : 8</div>
+<div class=M>[KR_CAPS_CPU]>      Cores                             : 4</div>
+<div class=M>[KR_CAPS_CPU]>      Physical packages                 : 1</div>
+<div class=M>[KR_CAPS_CPU]> ---- Package 0 -------------------------</div>
+<div class=M>[KR_CAPS_CPU]>      Vendor                            : GenuineIntel</div>
+<div class=M>[KR_CAPS_CPU]>      CPU Name                          : "Intel(R) Core(TM) i7-4750HQ CPU @ 2.00GHz"</div>
+<div class=M>[KR_CAPS_CPU]>      Frequency                         : 2000.0 MHz (1995.386 measured)</div>
+<div class=M>[KR_CAPS_CPU]>      Architecture                      : 64-bits</div>
+<div class=M>[KR_CAPS_CPU]>      MMX                               : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSE                               : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSE2                              : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSE3                              : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSSE3                             : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSE4.1                            : YES</div>
+<div class=M>[KR_CAPS_CPU]>      SSE4.2                            : YES</div>
+<div class=M>[KR_CAPS_CPU]>      AVX                               : YES</div>
+<div class=M>[KR_CAPS_CPU]>      F16C                              : YES</div>
+<div class=M>[KR_CAPS_CPU]>      FMA                               : YES</div>
+<div class=M>[KR_CAPS_CPU]>      POPCNT                            : YES</div>
+<div class=M>[KR_CAPS_CPU]>      BMI1                              : YES</div>
+<div class=M>[KR_CAPS_CPU]>      BMI2                              : YES</div>
+<div class=M>[KR_CAPS_CPU]>      x2APIC                            : YES</div>
+<div class=M>[KR_CAPS_CPU]>      HyperThreading                    : YES</div>
+<div class=M>[KR_CAPS_CPU]>      CPUID Leaves                      : 0000000D-00000008</div>
+<div class=M>[KR_CAPS_CPU]>      CACHE TYPE                  SIZE         ASSOCIATIVITY  LINE-SIZE</div>
+<div class=M>[KR_CAPS_CPU]>         L1 Data cache              32 KB             8 ways   64-bytes</div>
+<div class=M>[KR_CAPS_CPU]>         L1 Instruction cache       32 KB             8 ways   64-bytes</div>
+<div class=M>[KR_CAPS_CPU]>         L2 Unified cache          256 KB             8 ways   64-bytes</div>
+<div class=M>[KR_CAPS_CPU]>         L3 Unified cache         6144 KB            12 ways   64-bytes</div>
+<div class=M>[KR_CAPS_CPU]>         L4 Unified cache        131072 KB            16 ways   64-bytes</div>
+<div class=M>[KR_CAPS_CPU]>      PROCESSOR  APIC_ID  PACKAGE     CORE   THREAD    CACHES</div>
+<div class=M>[KR_CAPS_CPU]>              0     0000        0        0        0    L1D[0] L1I[0] L2[0] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              1     0001        0        0        1    L1D[0] L1I[0] L2[0] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              2     0002        0        1        0    L1D[1] L1I[1] L2[1] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              3     0003        0        1        1    L1D[1] L1I[1] L2[1] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              4     0004        0        2        0    L1D[2] L1I[2] L2[2] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              5     0005        0        2        1    L1D[2] L1I[2] L2[2] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              6     0006        0        3        0    L1D[3] L1I[3] L2[3] L3[0] L4[0]</div>
+<div class=M>[KR_CAPS_CPU]>              7     0007        0        3        1    L1D[3] L1I[3] L2[3] L3[0] L4[0]</div>
+<div class=M>[BOOT]> [KR_CAPS_CPU              ]:Startup     93888 usec      1120 bytes      4 KbTotal</div>
+<div class=M>[KR_CAPS_MEM]> Detecting memory:</div>
+<div class=M>[KR_CAPS_MEM]>      MEMORY        :          USED     AVAILABLE         TOTAL</div>
+<div class=M>[KR_CAPS_MEM]>      physical      :     3617.0 Mb     4015.0 Mb     7632.0 Mb</div>
+<div class=M>[KR_CAPS_MEM]>      page file     :     4636.0 Mb    10676.0 Mb    15312.0 Mb</div>
+<div class=M>[KR_CAPS_MEM]>      virtual       :     1936.0 Mb 134215792.0 Mb 134217728.0 Mb</div>
+<div class=M>[KR_CAPS_MEM]>      Address range : 00007FFFFFFEFFFF - 0000000000010000</div>
+<div class=M>[BOOT]> [KR_CAPS_MEM              ]:Startup        29 usec        72 bytes      4 KbTotal</div>
+<div class=M>[BOOT]> [KR_PROFILER              ]:Startup        18 usec      3448 bytes      7 KbTotal</div>
+<div class=M>[BOOT]> [KR_CHECKSUM              ]:Startup         0 usec         0 bytes      7 KbTotal</div>
+<div class=M>[BOOT]> [KR_COMPRESSION           ]:Startup         0 usec         0 bytes      7 KbTotal</div>
+<div class=M>[BOOT]> [KR_FILE                  ]:Startup        10 usec         8 bytes      8 KbTotal</div>
+<div class=M>[BOOT]> [KR_PLUGINS               ]:Startup         0 usec        56 bytes      8 KbTotal</div>
+<div class=M>[BOOT]> [KR_SCHEDULER             ]:Startup       299 usec     42680 bytes     49 KbTotal</div>
+<div class=M>[BOOT]> [KR_RESOURCES             ]:Startup         1 usec        80 bytes     49 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING KR_BASE_OBJECT ...</div>
+<div class=M>[BOOT]> [KR_BASE_OBJECT           ]:Startup        26 usec     17368 bytes     66 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH-EngineUtils ...</div>
+<div class=M>[BOOT]> [KR_RANDOM                ]:Startup        13 usec      5032 bytes     72 KbTotal</div>
+<div class=M>[BOOT]> [KR_TIMELINE              ]:Startup         1 usec         0 bytes     72 KbTotal</div>
+<div class=M>[BOOT]> [KR_ACTIONS               ]:Startup       102 usec     14928 bytes     86 KbTotal</div>
+<div class=M>[BOOT]> [KR_CORE                  ]:Startup        96 usec     10676 bytes     97 KbTotal</div>
+<div class=M>[BOOT]> [KR_SAMPLERS              ]:Startup        38 usec      6116 bytes    103 KbTotal</div>
+<div class=M>[BOOT]> [EU_SKELETON              ]:Startup         6 usec      2824 bytes    106 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH_COMPILER ...</div>
+<div class=M>[BOOT]> [HH_COMPILER              ]:Startup       165 usec     15704 bytes    121 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH_GEOMETRICS ...</div>
+<div class=M>[BOOT]> [GE_SKELETON              ]:Startup         0 usec         0 bytes    121 KbTotal</div>
+<div class=M>[BOOT]> [GE_MESH                  ]:Startup        59 usec      6132 bytes    127 KbTotal</div>
+<div class=M>[BOOT]> [GF_MESH_DEFORMERS        ]:Startup        29 usec     39308 bytes    165 KbTotal</div>
+<div class=M>[BOOT]> [GE_MESH_RESOURCE         ]:Startup         2 usec      4512 bytes    170 KbTotal</div>
+<div class=M>[BOOT]> [GE_MESH_KDTREE           ]:Startup         0 usec         0 bytes    170 KbTotal</div>
+<div class=M>[BOOT]> [GE_SHAPES                ]:Startup        45 usec      9376 bytes    179 KbTotal</div>
+<div class=M>[BOOT]> [GE_COLLIDERS             ]:Startup         0 usec         0 bytes    179 KbTotal</div>
+<div class=M>[BOOT]> [GE_BILLBOARDS            ]:Startup         0 usec         0 bytes    179 KbTotal</div>
+<div class=M>[BOOT]> [GE_RECTANGLE_LIST        ]:Startup         3 usec      4248 bytes    184 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH_IMAGING ...</div>
+<div class=M>[BOOT]> [IM_IMAGES                ]:Startup        22 usec      4344 bytes    188 KbTotal</div>
+<div class=M>[BOOT]> |</div>
+<div class=M>[BOOT]> | ... BOOTING HH_PARTICLES ...</div>
+<div class=M>[BOOT]> [HH_PARTICLES             ]:Startup      2039 usec    835364 bytes   1004 KbTotal</div>
+<div class=M>[BOOT]> [HH-CompilerBackend_CPU_Emulation]:Startup         3 usec      8704 bytes   1008 KbTotal</div>
+<div class=M>[KR_PLUGINS]> Registering module "CompilerBackend_CPU_Emulation" to handler "hh_compiler".</div>
+<div class=M>[KR_PLUGINS]> Registering module "PopcornFX-Image codec dds" to handler "im_codec".</div>
+<div class=M>[KR_PLUGINS]> Registering module "PopcornFX-Image codec png" to handler "im_codec".</div>
+<div class=M>[KR_PLUGINS]> Registering module "PopcornFX-Image codec targa" to handler "im_codec".</div>
+<div class=M>[???]> Startup PKFX</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=M>[???]> Exploring pack C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx...</div>
+<div class=M>[???]>   -> Particles/ButterFly_sceneIntersect.pkfx : ButterFly_sceneIntersect</div>
+<div class=M>[???]>   -> Particles/CampFire_Events.pkfx : CampFire_Events</div>
+<div class=M>[???]>   -> Particles/CarHud_TextSampler.pkfx : CarHud_TextSampler</div>
+<div class=M>[???]>   -> Particles/CoallBurn_SpatialLayers.pkfx : CoallBurn_SpatialLayers</div>
+<div class=M>[???]>   -> Particles/ElectricalBall_pCoords.pkfx : ElectricalBall_pCoords</div>
+<div class=M>[???]>   -> Particles/Explosion_vrandFunction.pkfx : Explosion_vrandFunction</div>
+<div class=M>[???]>   -> Particles/FireFly_Attractor.pkfx : FireFly_Attractor</div>
+<div class=M>[???]>   -> Particles/Fish_Flocking.pkfx : Fish_Flocking</div>
+<div class=M>[???]>   -> Particles/FlameThrower_Ribbon.pkfx : FlameThrower_Ribbon</div>
+<div class=M>[???]>   -> Particles/Grenade_MeshRenderer.pkfx : Grenade_MeshRenderer</div>
+<div class=M>[???]>   -> Particles/Lightning_FpsConstraint.pkfx : Lightning_FpsConstraint</div>
+<div class=M>[???]>   -> Particles/Link_lerpFunction.pkfx : Link_lerpFunction</div>
+<div class=M>[???]>   -> Particles/MagicSpell_Dynamic.pkfx : MagicSpell_Dynamic</div>
+<div class=M>[???]>   -> Particles/MagicSpell_Static.pkfx : MagicSpell_Static</div>
+<div class=M>[???]>   -> Particles/Orb_rotateFunction.pkfx : Orb_rotateFunction</div>
+<div class=M>[???]>   -> Particles/Pentacle_AnimTrack.pkfx : Pentacle_AnimTrack</div>
+<div class=M>[???]>   -> Particles/Rain_ViewPosition.pkfx : Rain_ViewPosition</div>
+<div class=M>[???]>   -> Particles/Snow_TurbSampler.pkfx : Snow_TurbSampler</div>
+<div class=M>[???]>   -> Particles/Soul_parentFunction.pkfx : Soul_parentFunction</div>
+<div class=M>[???]>   -> Particles/Spark_ExternEvents.pkfx : Spark_ExternEvents</div>
+<div class=M>[???]>   -> Particles/Spark_Triggered.pkfx : Spark_Triggered</div>
+<div class=M>[???]>   -> Particles/WorldMap_TextureSampler.pkfx : WorldMap_TextureSampler</div>
+<div class=M>[???]> ##### PDF 2D BUILD ################</div>
+<div class=M>[???]> ## size              : 1024 x 512</div>
+<div class=M>[???]> ## min treshold      : 0.000e+000</div>
+<div class=M>[???]> ## remap discrepancy : 1.000e+000</div>
+<div class=M>[???]> ##### 6.058 ms ######################</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Preloading OK "Particles/Soul_parentFunction.pkfx"</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\Branch_01.png"</div>
+<div class=M>[???]> Growing Ribbons 000000002E006AD8 buffers from maxverts=0, maxind=0 to maxvert=320, maxind=416 (IFORMAT=D3DFMT_INDEX32) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\Smoke_02.png"</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\Smoke_02.png"</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\Glow_01.png"</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\Distortion_01.png"</div>
+<div class=M>[???]> Growing FxMesh 000000002E06FCF8 buffers from maxverts=0, maxind=0 to maxvert=134, maxind=137 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071628 buffers from maxverts=0, maxind=0 to maxvert=224, maxind=272 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E070E68 buffers from maxverts=0, maxind=0 to maxvert=140, maxind=146 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing Ribbons 000000002E006AD8 buffers from maxverts=320, maxind=416 to maxvert=548, maxind=758 (IFORMAT=D3DFMT_INDEX32) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071628 buffers from maxverts=224, maxind=272 to maxvert=404, maxind=542 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing Ribbons 000000002E006AD8 buffers from maxverts=548, maxind=758 to maxvert=890, maxind=1271 (IFORMAT=D3DFMT_INDEX32) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing Ribbons 000000002E006AD8 buffers from maxverts=890, maxind=1271 to maxvert=1418, maxind=2063 (IFORMAT=D3DFMT_INDEX32) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071628 buffers from maxverts=404, maxind=542 to maxvert=680, maxind=956 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing Ribbons 000000002E006AD8 buffers from maxverts=1418, maxind=2063 to maxvert=2210, maxind=3251 (IFORMAT=D3DFMT_INDEX32) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Preloading OK "Particles/Snow_TurbSampler.pkfx"</div>
+<div class=M>[???]> Loading Texture "Textures\Fx\DirtPieces_01.png"</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=368, maxind=488 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=368, maxind=488 to maxvert=620, maxind=866 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=320, maxind=416 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=272, maxind=344 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=176, maxind=200 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[GE_MESH_RESOURCE]> Loading Mesh "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx/Meshes/SceneButterflies.pkmm"</div>
+<div class=M>[GE_MESH_RESOURCE]> read KdTree chunk: leaves=24.8 Kb (50.0 %), nodes=141.9 Kb, total=166.8 Kb (expanded=191.6 Kb)</div>
+<div class=W>[???]> [MeshBuilder::LoadPkmm] "Meshes/SceneButterflies.pkmm" OK (primitives count: 336)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=224, maxind=272 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": building mesh ...</div>
+<div class=E>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": nothing to build</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": building mesh ...</div>
+<div class=E>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": nothing to build</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": building mesh ...</div>
+<div class=E>[???]> [SceneMeshBuild] "Meshes/UnityScene.pkmm": nothing to build</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=10226, maxind=15275 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=10226, maxind=15275 to maxvert=15422, maxind=23069 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=224, maxind=272 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=224, maxind=272 to maxvert=404, maxind=542 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=0, maxind=0 to maxvert=224, maxind=272 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Growing FxMesh 000000002E071248 buffers from maxverts=224, maxind=272 to maxvert=404, maxind=542 (IFORMAT=DXGI_FORMAT_R16_UINT) (COLORS=FLOAT4)</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M>[???]> Added C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx for watching.</div>
+<div class=W>[???]> Pack "C:/Users/symon/Documents/Lyve Project/Assets/StreamingAssets/PackFx" already loaded.</div>
+<div class=M><center>... SHUTDOWN ...</center></div></body></html>
