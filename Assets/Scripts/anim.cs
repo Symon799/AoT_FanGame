@@ -1,43 +1,55 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+ [RequireComponent(typeof(AudioSource))]
 public class anim : MonoBehaviour {
 
     private GameObject velo;
-    //private ParticleSystem smoke;
+    public GameObject particles;
+    public ParticleSystem smoke;
+    private ParticleSystem.EmissionModule smokeEm;
 
 
     void Start()
     {
-        //smoke = GameObject.Find("WhiteSmoke").GetComponent<ParticleSystem>();
+        smoke = GameObject.Find("WhiteSmoke").GetComponent<ParticleSystem>();
         velo = GameObject.Find("RigidBodyFPSController");
+        smokeEm = smoke.emission;
     }
     void Update()
     {
+        float vit = velo.GetComponent<Rigidbody>().velocity.magnitude;
         if (Input.GetButtonDown("Attack"))
             GetComponent<Animator>().SetInteger("state", 1);
         else if (Input.GetButtonUp("Attack"))
         {
             GetComponent<Animator>().SetInteger("state", 2);
+            GetComponent<AudioSource>().Play();
             StartCoroutine("attack");
         }
-
-        if (velo.GetComponent<Rigidbody>().velocity.magnitude > 0.7)
+        if (vit > 0.7)
         {
+            smokeEm.enabled = true;
+
+            if (vit > 25)
+                particles.SetActive(true);
+            else
+                particles.SetActive(false);
+
             GetComponent<Animator>().SetBool("speed", true);
-            if (velo.GetComponent<Rigidbody>().velocity.magnitude > 10)
+            if (vit > 10)
                 GetComponent<Animator>().SetBool("air", true);
             else
                 GetComponent<Animator>().SetBool("air", false);
-                
+
         }
         else
         {
+            smokeEm.enabled = false;
             GetComponent<Animator>().SetBool("speed", false);
         }
     }
-
-    IEnumerator attack()
+        IEnumerator attack()
     {
         yield return new WaitForSeconds(0.15f);
         GetComponent<Animator>().SetInteger("state", 0);

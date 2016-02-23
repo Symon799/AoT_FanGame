@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class ShootGrapple : MonoBehaviour {
 
     public Rigidbody grap;
@@ -14,6 +15,7 @@ public class ShootGrapple : MonoBehaviour {
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    GetComponent<AudioSource>().Play();
                     Rigidbody cloneLeft = Instantiate(grap, transform.position, transform.rotation) as Rigidbody;
                     cloneLeft.name = "cloneLeft";
                     cloneLeft.velocity = transform.TransformDirection(Vector3.forward * speed);
@@ -23,6 +25,7 @@ public class ShootGrapple : MonoBehaviour {
             {
                 if (Input.GetMouseButtonDown(1))
                 {
+                    GetComponent<AudioSource>().Play();
                     Rigidbody cloneRight = Instantiate(grap, transform.position, transform.rotation) as Rigidbody;
                     cloneRight.name = "cloneRight";
                     cloneRight.velocity = transform.TransformDirection(Vector3.forward * speed);

@@ -8,7 +8,7 @@ public class Hook : MonoBehaviour {
     private GameObject player2;
     private Rigidbody Rplay;
 
-    private bool oneTime = false;
+    private bool oneTime;
     private float curDistance;
     private LineRenderer line;
     private bool oneTime2 = true;
@@ -75,6 +75,9 @@ public class Hook : MonoBehaviour {
 	    {                
             if (Input.GetButton("Jump"))
             {
+                if (Input.GetButton("Fire1") && Input.GetButton("Fire2"))
+                    oneTime = true;
+
                 try
                 {
                     if (oneTime2)
@@ -89,7 +92,6 @@ public class Hook : MonoBehaviour {
                         Vector3 moveDir2 = (cloneL.transform.position - player.transform.position).normalized;
                         Vector3 moveDirF = moveDir1 + moveDir2;
                         Rplay.velocity = (moveDirF * (speedHook - 1));
-                        oneTime = true;
                     }
                     else
                     {
@@ -124,7 +126,7 @@ public class Hook : MonoBehaviour {
 
     IEnumerator MyCoroutine()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         oneTime = false;
     }
 
