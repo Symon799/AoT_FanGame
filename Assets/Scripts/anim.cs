@@ -5,8 +5,8 @@ using System.Collections;
 public class anim : MonoBehaviour {
 
     private GameObject velo;
-    public GameObject particles;
-    public ParticleSystem smoke;
+    public ParticleSystem speedParticles;
+    private ParticleSystem smoke;
     private ParticleSystem.EmissionModule smokeEm;
 
 
@@ -30,12 +30,11 @@ public class anim : MonoBehaviour {
         if (vit > 0.7)
         {
             smokeEm.enabled = true;
-
             if (vit > 25)
-                particles.SetActive(true);
+                speedParticles.Play();
             else
-                particles.SetActive(false);
-
+                speedParticles.Stop();
+                
             GetComponent<Animator>().SetBool("speed", true);
             if (vit > 10)
                 GetComponent<Animator>().SetBool("air", true);

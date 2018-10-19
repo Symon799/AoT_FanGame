@@ -438,7 +438,7 @@ public class CFXEasyEditor : EditorWindow
 		GUILayout.Space(8);
 		
 		//Resize window
-		if(foldoutChanged && Event.current.type == EventType.repaint)
+		if(foldoutChanged && Event.current.type == EventType.Repaint)
 		{
 			foldoutChanged = false;
 			
